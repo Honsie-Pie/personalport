@@ -1,0 +1,150 @@
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  :root {
+    --contrastyred:#FF7070;
+  }
+  
+  html {
+    scroll-behavior:smooth;
+  }
+  
+  body {
+    background-color:#112A46;
+    font-family:Helvetica;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  header {
+    background-color:var(--contrastyred);
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    position:fixed;
+  }
+  
+  header ul {
+    width:40%;
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  li {
+    list-style-type:none;
+    padding:1em;
+  }
+  
+  h1 {
+    color:white;
+    text-align:center;
+    font-size:60px;
+  }
+  
+  p {
+    color:var(--contrastyred);
+    text-align:center;
+    font-size:30px;
+  }
+  
+  a {
+    text-decoration:none;
+    color:white;
+    font-size:1.4rem;
+  }
+  
+  section {
+    height:100vh;
+    width:100%;
+    padding: 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  
+  
+  a:hover {
+    background-color:white;
+  }
+  
+  #projects {
+    background-color:pink;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    column-gap:2em;
+  }
+  
+  h2 {
+    padding:3em 0 0;
+    text-align:center;
+  }
+  
+  .section-head {
+    grid-column:1/-1
+  }
+  
+  .project-tile {
+    width:90%;
+    max-width:500px;
+    margin: 0 auto;
+    background-color:#112A46;
+  }
+  
+  .project-tile img {
+    object-fit:cover;
+    height:200px;
+    width:100%;
+  }
+  
+  .project-tile a {
+    display:block;
+    text-align:center;
+    font-size:1.3em;
+  }
+  
+  #contacts {
+    height:90vh;
+  }
+  
+  .social-links {
+    display:flex;
+    width:60%;
+    margin: 1em auto;
+    justify-content:space-evenly;
+  }
+  
+  footer {
+    height:10vh;
+    border-top:2px solid var(--contrastyred);
+    padding: 1rem 0.5rem;
+  }
+  
+  .foot {
+    color:white;
+    font-size:1rem;
+    text-align:left;
+  }
+  
+  @media only screen and (max-width:720px){
+   #projects {
+    height:unset;
+    padding-bottom:2em;
+    grid-template-columns: 1fr;
+    align-items:center;
+    row-gap:2em;
+  }
+  
+  h1 {
+    font-size:40px;
+  }
+  
+  p {
+    font-size:24px;
+  }
+  
+  }
+  
