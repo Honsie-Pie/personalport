@@ -35,6 +35,7 @@
   
   li {
     list-style-type:none;
+    color:white;
     padding:1em;
   }
   
@@ -69,6 +70,32 @@
   a:hover {
     background-color:white;
   }
+
+#welcome-section{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.personal-info{
+    width:40%;
+}
+
+h2{
+    color:white;
+}
+
+.skills div ul{
+    margin-top: 1em;
+    color: white;
+}
+
+.skills >div > ul > li{
+    color: white;
+    margin: 0.5rem 0;
+    padding:0;
+}
   
   #projects {
     background-color:pink;
